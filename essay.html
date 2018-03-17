@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Essay on page load times</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">LizWishaw.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.lizwishaw.com/">Portfolio</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="">Essay</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h2>Strategies for improving load time of web sites</h2>
+        <p>Website visitors may enjoy a well-designed website, but if the site is slow to load  — they most likely will look elsewhere. In a study done in 2011 by Akamai.com and Gomez.com, about half of web users expect a site to load in 2 seconds or less. If it isn’t loaded within 3 seconds, those users tend to abandon the site.</p>
+        
+        <p>There are several ways to improve a page’s load speed. </p>
+      
+      <h4>Code the site for mobile-first quality and speed</h4>
+      
+      <p>It’s critical to ensure a website is mobile first. The industry has shifted in its thinking and the strategy should be to code for mobile users first and then progressively enhance the experience for tablets and desktops. To accomplish this, use Google’s Mobile Website Auditor to test the site.  The test will show your website’s score by a selection of usability criteria, like viewpoint configuration, plugins, proximity of clickable elements and text readability.</p>
+      <p>Optimize user-experience design by thinking about the workflow strategy, SEO optimization, voice search and make copy readable on all devices. Platforms such as Wix, Squarespace and Google Sites have changed their setups to think in mobile first.</p>
+      
+    <h4>Reduce the number of images used</h4>
+      <p>Design has shifted to a more minimal, crisper look compared to the earlier days of web design. Rethink the background image, especially if the file size is big. This may not only help reduce image HTTP requests but may improve the user experience by removing distracting images that don’t correspond to the written content plan.</p>
+
+    <h4>Reduce the size of the images</h4>
+      <p>Make sure the images are appropriately-sized. The quality of a web image can still hold up at smaller sizes versus those needed for traditional print design. New formats such as WebP, created by Google developers, provides superior lossless compression for images on the web. WebP lossless images are 26 percent smaller in size compared to pngs. WebP lossy images are 25-34 percent smaller than comparable JPEG images at equivalent SSIM quality index. To download and start using WebP, see tinyurl.com/afjrref.</p>
+      <p>Hero images are popular design options these days. Optimization software such as Compressor.io or Image Optimizer can help keep the images  below 150 KB, nothing above 1920 pixels in width, at an average quality of 72 dpi quality level.  Any larger than this and images will load late after the page renders. </p>
+      <p>Another option is to combine images into CSS sprites to reduce roundtrips. This combines commonly used images into a single image file, thus reducing the number of HTTP request that are required to download the webpage. This feature is implemented through proper use of the CSS background-image and background-position properties.</p>
+      <p>And set a container property with max width not to surpass 90 percent of boundary width by using this formula: .container {width: 800px; max-width: 90%;}. Finally, make sure the images auto-resize to the max width: img {max-width: 100%; height: auto;}</p>
+    
+    <h4>Minimize HTTP Requests</h4>   <p>Reduce the number of HTTP (Hypertext Transfer Protocol) requests (images, stylesheets, scripts, Flash, etc.) from a web server is the key to faster pages. According to Yahoo, these requests tend to take up about 80 percent  of a page’s load time. The browser also limits requests between 4-8 simultaneous connections per domain which means loading 30-plus assets at once is not an option.</p>
+      <p>To do so, combine the CSS/JS files into one larger file, which will allow the browser to search less and create a faster load time. Queries can help load only what’s needed. Use conditional statements in the JavaScript file to run a certain script on mobile only or if images only need to load on a desktop. It allows the browser to load only what is needed versus having it try to load unnecessary scripts or images for viewports or certain devices. This helps increase speed load of the page. </p>
+      <p>Looking to dive deeper into page-loading time analytics, see the results of the Akamai.com and Gomez.com study <a href="https://blog.kissmetrics.com/wp-content/uploads/2011/04/loading-time.pdf">here.</a></p>
+  </main> 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  </body>
+</html>
